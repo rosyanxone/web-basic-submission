@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Global Rule Start */
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, rgba(240,230,238,1) 0%, rgba(247,235,228,1) 100%);
+}
+
+p,
+.text-sm {
+    font-size: 16px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h3,
+.text-md {
+    font-size: 24px;
+}
+
+h2,
+.text-lg {
+    font-size: 36px;
+}
+
+h1,
+.text-xl {
+    font-size: 40px;
+}
+
+.font-bold {
+    font-weight: 800;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.font-md {
+    font-weight: 500;
+}
+
+.mt-14 {
+    margin-top: 14px;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.mb-14 {
+    margin-bottom: 14px;
+}
+
+.mb-12 {
+    margin-bottom: 12px;
+}
+
+.mb-8 {
+    margin-bottom: 8px;
+}
+
+.mr-14 {
+    margin-right: 14px;
+}
+
+.text-wrap {
+    text-align: justify;
+}
+
+.w-limit {
+    max-width: 1112px;
+}
+
+figure {
+    position: relative;
+    background-color: rgb(179, 179, 179);
+    display: flex;
+    justify-content: center;
+}
+
+.img-full {
+    width: 100%;
+}
+/* Global Rule End */
+
+/* Header Start */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sub-header {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #2B3A55;
+    padding: 8px;
+}
+
+ul {
+    width: 100%;
+}
+
+ul li {
+    display: inline;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    margin-right: 16px;
+}
+/* Header End */
+
+/* Main Start */
+main {
+    margin: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main #content {
+    width: 50%;
+}
+
+article {
+    margin-bottom: 70px;
+}
+
+article h1 {
+    text-align: center;
+}
+/* Main End */
+
+/* About Content Start */
+.about-frame {
+    height: 340px;
+}
+/* About Content End */
+
+/* Service Content Start */
+.services figure {
+    height: 300px;
+}
+
+.black-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0;
+}
+
+.black-bg:hover {
+    transition-duration: .5s;
+    opacity: 20%;
+}
+
+.black-bg:hover + span {
+    transition-duration: .5s;
+    top: 48%;
+}
+
+figure span {
+    position: absolute;
+    color: white;
+    top: 50%;
+    bottom: 50%;
+}
+
+figure span~:hover {
+    color: red;
+}
+
+.sub-service figure {
+    height: auto;
+}
+
+.sub-service {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-semihalf {
+    width: 100%;
+}
+
+.sub-service-frame {
+    width: 50%;
+}
+/* Service Content End */
+
+/* Contact Content Start */
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.contact-address {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+.contact-address:hover {
+    text-decoration: underline;
+}
+
+.contact-address svg {
+    margin-right: 10px;
+}
+/* Contact Content End */
+
+/* Aside Start */
+aside {
+    position: sticky;
+    top: 0;
+    height: 435px;
+    width: 35%;
+    background-color: #2B3A55;
+    color: white;
+    padding: 20px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.sub-aside {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-frame {
+    width: 140px;
+}
+
+.img-profile {
+    height: 140px;
+}
+
+.profile-bio {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.profile-bio > * {
+    display: inline-block;
+}
+
+.rounded-max {
+    border-radius: 100%;
+}
+/* Aside End */
+
+/* Footer Start */
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #2B3A55;
+    color: white;
+    padding: 20px;
+}
+/* Footer End */
+
+
+@media screen and (max-width: 600px) {
+    
+    * {
+        margin: auto;
+    }
+
+    body {
+        display: block;
+    }
+
+    .w-limit {
+        width: auto;
+    }
+
+    aside {
+        display: none;
+    }
+
+    footer {
+        width: auto;
+    }
+}
