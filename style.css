@@ -5,10 +5,6 @@
     margin: 0;
 }
 
-html, body {
-    height: 100%;
-}
-
 body {
     display: flex;
     justify-content: center;
@@ -312,6 +308,10 @@ footer h4 {
 
     body {
         display: block;
+    }
+
+    html, body {
+        height: 100%;
     }
 
     .w-limit {
